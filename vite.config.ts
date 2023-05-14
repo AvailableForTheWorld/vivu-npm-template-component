@@ -1,5 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import DefineOptions from 'unplugin-vue-define-options/vite'
+import dts from "vite-plugin-dts"
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig(({ mode }) => {
@@ -78,7 +80,7 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
-    plugins: [vue()],
+    plugins: [vue(),dts({entryRoot:"src",outputDir:"dist"}),DefineOptions()],
     optimizeDeps,
     build,
     test,

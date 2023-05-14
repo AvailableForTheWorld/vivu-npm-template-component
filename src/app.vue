@@ -1,15 +1,15 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './helloWorld.vue'
+import Drr from './packages'
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
+    Drr,
   },
 })
 </script>
 
 <template>
-  <HelloWorld />
+  <Drr />
 </template>

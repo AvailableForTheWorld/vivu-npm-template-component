@@ -37,7 +37,7 @@
     "clean:dist": "rimraf dist",
     "clean:coverage": "rimraf coverage",
     "dev": "vite --mode dev",
-    "build": "pnpm clean:dist && vite build --mode prod && vue-tsc --emitDeclarationOnly",
+    "build": "pnpm clean:dist && vite build --mode prod",
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -58,6 +58,8 @@
     }
   },
   "dependencies": {
+    "unplugin-vue-define-options": "1.2.1",
+    "vite-plugin-dts": "^2.3.0",
     "vue-demi": "^0.13.11"
   },
   "devDependencies": {
